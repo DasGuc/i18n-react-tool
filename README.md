@@ -1,1 +1,1 @@
-# i18n react tool 
+# i18n react tool  [![Build Status](https://travis-ci.org/Spotinux/i18n-react-tool.svg)](https://travis-ci.org/Spotinux/i18n-react-tool)

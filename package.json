@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-server": "babel server --watch --out-dir dist"
+    "test": "npm run test-server",
+    "watch-server": "babel server --watch --out-dir dist",
+    "build-server": "babel server --out-dir dist",
+    "test-server": "npm run lint-server",
+    "lint-server": "./node_modules/.bin/eslint server"
   },
   "repository": {
     "type": "git",
