@@ -1,0 +1,63 @@
+@import '../../../styles/variables.scss';
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: $sidebar-width;
+  height: auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 .0625rem rgba(0,0,0,.075),0 .0625rem .125rem rgba(0,0,0,.25);
+  text-align: center;
+}
+
+.sidebar {
+
+  .brand {
+    position: relative;
+    width: 100%;
+    height: $navbar-height;
+    line-height: $navbar-height;
+    text-align: center;
+    cursor: pointer;
+    
+    .glyphicon {
+      font-size: 35px;
+      margin-top: 11px;
+      color: $fg-brand;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .item {
+    $height: 30px;
+    $border-size: 4px;
+    
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-right: -$border-size;
+    height: $height;
+    line-height: $height;
+    text-align: center;
+    font-size: 12px;
+    border-right: $border-size solid transparent;
+    cursor: pointer;
+    
+    &.item-error {
+      border-right: $border-size solid #DD6777;
+    }
+    
+    &.item-success {
+      border-right: $border-size solid #6FC080;
+    }
+    
+    &:hover {
+      background-color: rgba(0,0,0,.05);
+    }
+  }
+}

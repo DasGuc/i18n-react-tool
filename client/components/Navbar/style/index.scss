@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.navbar {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: auto;
+  height: $navbar-height;
+  background-color: $bg-navbar;
+  border-radius: 0;
+}

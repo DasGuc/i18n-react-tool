@@ -13,4 +13,9 @@ addons:
 install:
   - npm install
 before_script:
+  - npm run lint-server
+  - npm run lint-client
   - npm run build-server
+  - npm run build-client
+  - npm run test-server
+  - npm run test-client
